@@ -2,6 +2,18 @@
 
 Analyze the crawled sports data.
 
+## Docker Image
+
+```
+$ docker pull allensyk/simple_sports_data_analyzer
+```
+| Environment Variable | Description |
+| :--- | :--- |
+| DB_HOST | DB host address. |
+| DB_PORT | DB port. |
+| DB_USERNAME | DB username. |
+| DB_PASSWORD | DB user password. |
+
 ## Table Description
 
 ### game_judgement
