@@ -1,0 +1,9 @@
+logging:
+  level: "DEBUG"
+
+DB:
+  host: "allenfield.ddns.net"
+  port: 7306
+  user: "allen"
+  password: "aldbpw"
+  schema: "gambling_simulation"
