@@ -7,7 +7,7 @@ services:
     image: allensyk/simple_sports_data_analyzer:0.1
     container_name: analyzer
     environment:
-      DB_HOST: allenfield.ddns.net
-      DB_PORT: 7306
-      DB_USERNAME: allen
-      DB_PASSWORD: aldbpw
+      DB_HOST: 192.168.2.3
+      DB_PORT: 3306
+      DB_USERNAME: user
+      DB_PASSWORD: password
