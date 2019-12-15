@@ -6,11 +6,11 @@ from sqlalchemy import create_engine
 
 from config.constant import global_constant
 from config.logger import get_logger
+from util.singleton import Singleton
 
 
-class Util:
+class Util(metaclass=Singleton):
     def __init__(self):
-        # TODO: make singleton
         self.logger = get_logger(self.__class__.__name__)
         with open('config/configuration.yml', 'r') as config:
             self.config = yaml.load(config, Loader=yaml.Loader)
