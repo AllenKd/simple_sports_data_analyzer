@@ -8,5 +8,6 @@ pipeline/*
 .gitignore
 .gitmodules
 .dockerignore
+docker-compose.yaml
 Dockerfile
 README.md
