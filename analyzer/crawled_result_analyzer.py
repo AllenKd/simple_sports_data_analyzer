@@ -15,6 +15,7 @@ class CrawledResultAnalyzer:
 
     def start_analyze(self):
         self.logger.info('start analyzer')
+        self.db = Util().get_db_connection()
         Util().dataframe_to_db(self.judge_game_data(), 'game_judgement')
 
         for group in self.get_prediction_groups():
