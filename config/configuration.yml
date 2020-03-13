@@ -1,9 +1,8 @@
-logging:
-  level: "DEBUG"
-
 DB:
-  host: 192.168.2.3
+  host: 192.168.31.73
+  password: aldbpw
   port: 3306
-  user: user
-  password: password
-  schema: "gambling_simulation"
+  schema: gambling_simulation
+  user: allen
+logging:
+  level: DEBUG

@@ -4,10 +4,10 @@ services:
     build:
       context: ./
       dockerfile: ./build/Dockerfile
-    image: allensyk/simple_sports_data_analyzer:0.3
+    image: allensyk/simple_sports_data_analyzer:0.5
     container_name: analyzer
     environment:
-      DB_HOST: 192.168.2.3
+      DB_HOST: 192.168.31.73
       DB_PORT: 3306
-      DB_USERNAME: user
-      DB_PASSWORD: password
+      DB_USERNAME: allen
+      DB_PASSWORD: aldbpw
