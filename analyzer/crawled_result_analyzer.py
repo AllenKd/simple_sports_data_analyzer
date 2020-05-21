@@ -76,8 +76,8 @@ class CrawledResultAnalyzer:
         prediction_judgement['game_type'] = prediction_data['game_type']
 
         self.logger.debug('start judge local original case')
-        temp_target_prediction = prediction_data['population_local_original_guest'] < prediction_data[
-            'population_local_original_host']
+        temp_target_prediction = (prediction_data['population_local_original_guest'] < prediction_data[
+            'population_local_original_host']).astype(int)
         prediction_judgement['local_original_result'] = temp_target_prediction == game_judgement['host_win_original']
         prediction_judgement['local_original_percentage'] = np.where(
             game_judgement['host_win_original'],
